@@ -65,11 +65,11 @@ export const Formulario = ({initialUserForm,userSelected,handlerAddUser}) => {
                 name={'id'}
                 value={id}
             />
-            <button 
-                className="btn btn-primary"
+            <button
+                className={'btn btn-primary'}
                 type={'submit'}
-            >
-                Crear
+            >{
+                id > 0 ? 'Editar': 'Crear'}
             </button>
         </form>
         </>
